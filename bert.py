@@ -3,10 +3,6 @@ import os
 import sys
 import inspect
 
-currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
-parentdir = os.path.dirname(currentdir)
-sys.path.insert(0, parentdir)
-
 from IPython.display import display
 from dataclasses import dataclass
 from typing import List, Optional, Union
@@ -43,11 +39,7 @@ class BertConfig:
 
 @dataclass
 class BertOutput:
-    """The output of your Bert model.
-
-    logits is used for w2d1 and is the prediction for each token in the vocabulary
-    The other fields are used on w2d2 for the sentiment task.
-    """
+    """The output of the Bert model."""
 
     logits: Optional[t.Tensor] = None
     is_positive: Optional[t.Tensor] = None

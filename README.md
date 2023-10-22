@@ -2,10 +2,9 @@
 
 ## Purpose
 
-The project is an implementation of the BERT language model from the paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" and more specifically the process was first taking the weights from the "bert-base-cased" HuggingFace model and then later training it on a dataset. Much of this implementation consisted of understanding how attention worked, finetuning it on the IMDB dataset, and training a language model on a small GPU configuration.
+The project is an implementation of the BERT language model from the paper "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding" and more specifically the process was first taking the weights from the "bert-base-cased" HuggingFace model and then later training it on a dataset. Much of this implementation consisted of understanding how attention worked, finetuning it on the IMDB dataset, and training a masked language model on a small GPU configuration using the WikiText-2 dataset.
 
-
-When training this model, I achieved about 40% accuracy on a test hold of the MLM dataset, warranting possible improvements in accuacy.
+When training this model, I achieved about 40% accuracy on a test hold of the WikiText-2 dataset, warranting possible improvements in accuacy.
 
 ## Setup
 
